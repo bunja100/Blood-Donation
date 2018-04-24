@@ -44,7 +44,7 @@ h6 {
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-	color: #3a3a3a;
+	color: #660300;
 	font-weight: 700;
 	margin-bottom: 20px;
 	font-family: 'Montserrat', sans-serif;
@@ -250,7 +250,8 @@ Parallax
 ============================= */
 
 #parallax1{
-	background-image: url(../img/parallax/1.jpg);
+	background-image: url(../img/parallax/1.png);
+	background-size: 100%;
 }
 #parallax2{
 	background-image: url(../img/parallax/2.jpg);
@@ -318,8 +319,14 @@ About
 
 #about .about-img {
   height: 350px;
+  margin-top: 10px;
   overflow: hidden;
 }
+
+/*#benefit_of_health{
+	border: 1px solid black;
+	margin-top: 10px;
+}*/
 
 #about .about-img img {
   margin-left: -15px;
@@ -341,6 +348,10 @@ About
   font-weight: 300;
   font-size: 24px;
   text-align: left;
+}
+
+#about li{
+	text-align: center;
 }
 
 #about .content h3 {
@@ -691,7 +702,7 @@ ul.social-network li a i{
 Footer
 ================================= */
 footer {
-	background: #00c1c1;
+	background: #c10024;
 	color: #fff;
 	padding: 50px 0 30px;
 }
@@ -781,4 +792,11 @@ more media queries
 	header h1{
 		font-size: 70px;
 	}
+}
+
+
+.register {
+	position: absolute;
+    left: 43%;
+    bottom: 20px;
 }

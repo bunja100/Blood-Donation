@@ -63,9 +63,9 @@
       // else:
 
       images: [
-        "img/bgslides/1.jpg",
-        "img/bgslides/2.jpg",
-        "img/bgslides/3.jpg"
+        "frontend/img/bgslides/1.jpg",
+        "frontend/img/bgslides/2.jpg",
+        "frontend/img/bgslides/3.jpg"
       ],
 
       onStart: function() {},

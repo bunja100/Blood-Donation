@@ -34,64 +34,190 @@
             </button>
 
             <!-- Logo text or image -->
-            <a class="navbar-brand" href="index.html">Alstar</a>
+            <a class="navbar-brand" href="index.html">Blood Donation</a>
 
         </div>
         <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li class="current"><a href="#intro">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Service</a></li>
-                <li><a href="#portfolio">Works</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Why Donate</a></li>
+                <li><a href="#portfolio">Eligibilty</a></li>
+                <li><a href="#services">Testimonials</a></li>                
+                <!-- <li><a href="#team">Team</a></li> -->
+                <!-- <li><a href="#contact">Write your testimonial</a></li> -->
+                <li><a href="#myModal" data-toggle="modal">register</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
+<!-- alert -->
+
+<!--  end of alert -->
+
 <!-- intro area -->
 <div id="intro">
     <div class="intro-text">
         <div class="container">
-            <div class="col-md-12">
+                        <div class="col-md-12">
+                       
+                                <div class="pull-left">
+                <button  type="submit" class="btn info-button">Blood Needed!</button>
+                 </div>
+                       
                 <div id="rotator">
-                    <h1><span class="1strotate">Alstar web studio, Design for life, Creativity and technology</span></h1>
-                    <div class="line-spacer"></div>
-                    <p><span class="2ndrotate">Web Design, Brand Identity, Promotion</span></p>
+
+                     <h1><span class="1strotate"><h1><span class="1strotate">Help save a life, If You're A Blood Donor, You're A Hero To Someone, Somewhere, Who Received Your Gracious Gift Of Life</span></h1></span></h1>
+            <div class="line-spacer"></div>
+            <p><span class="2ndrotate">Give Hope, Bring Change, A Better Nation</span></p>
                 </div>
+            </div>
+
+            <div class="register navigation" style="margin-left: -45px">
+                <!-- <a href="#contact" class="btn btn-primary btn-lg">Donate Blood</a> -->
+                <button  type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Register To Donate Blood</button>
+
             </div>
         </div>
     </div>
 </div>
 
-<!-- About -->
-<section id="about" class="home-section bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <div class="section-heading">
-                    <h2>About us</h2>
-                    <div class="heading-line"></div>
-                    <p>We’ve been building unique digital products, platforms, and experiences for the past 6 years.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row wow fadeInUp">
-            <div class="col-md-6 about-/frontend/img">
-                <img src="/frontend/img/about-img.jpg" alt="">
-            </div>
+<!-- my modal -->
 
-            <div class="col-md-6 content">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h2>
-                <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-                <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet cursus sit amet dictum sit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-            </div>
+<div  id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content col-md-8 col-md-offset-2">
+            <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Donor Registration</h4>
+    </div>
+    <div class="modal-body">
+            <form action="#" method="post" role="form">
+                <div class="form-group">
+                    <label class="pull-left">First Name: </label>
+                    <input type="text" name="" class="form-control" placeholder="enter first name">
+                </div>
+
+                <div class="form-group">
+                    <label class="pull-left">Last Name: </label>
+                    <input type="text" name="" class="form-control" placeholder="enter your lastname">
+                </div>
+
+                <div class="form-group">
+                    <label class="pull-left">Location: </label>
+                    <select class="form-control">
+                        <option value="Banjul">Banjul</option>
+                        <option value="Brikama">Brikama</option>
+                        <option value="Serrekunda">Serrekunda</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="pull-left">Blood Type: </label>
+                    <select class="form-control">
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB">AB</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="pull-left">Phone Number: </label>
+                    <input type="text" name="" class="form-control" placeholder="enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label class="pull-left">Email (<object>optional</object>)</label>
+                    <input type="email" name="" class="form-control" placeholder="enter your email">
+                </div>
+
+                <button class="btn btn-primary pull-left" type="submit">Submit</button>
+            </form>
+    </div>
+        <div class="modal-footer">
+            
+        </div>
         </div>
     </div>
-</section>
+</div>
+
+<!-- end of my modal -->
+
+<!-- About -->
+  <section id="about" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>About</h2>
+            <div class="heading-line"></div>
+            <p>“Tears of a mother cannot save her child, but your blood can.”</p>
+          </div>
+        </div>
+      </div>
+      <div class="row wow fadeInUp">
+        <div class="col-md-6 about-img">
+          <img  style="margin-top: 150px" src="../frontend/img/about-img.jpg" alt="Blood">
+        </div>
+
+        <div class="col-md-6 content">
+          <h2>What is blood donation?</h2>
+          <h3>There many important reasons and benefits for donating blood. We'll just give a brief explanation of some of them. </h3>
+          <p>
+            A blood donation occurs when a person voluntarily has blood drawn and used for transfusions and/or made into biopharmaceutical medications by a process called fractionation (separation of whole-blood components). Donation may be of whole blood (WB), or of specific components directly (the latter called apheresis). Blood banks often participate in the collection process as well as the procedures that follow it.            
+          </p>
+
+           <h3>Importance</h3>
+           <p>+
+            The number one reason donors say they give blood is because they “want to help others.”  Whatever your reason, the need is constant and your contribution is important for a healthy and reliable blood supply. And you'll feel good knowing you've helped change a life.
+           </p>
+      </div>
+
+          <div class="col-md-12 about-img" id="benefit_of_health" style="border: 1px solid black; margin-top: 15px; box-shadow: 0 0 1px #ccc, 15px 10px 1px #ccc, -15px 10px 1px #ccc;">
+         
+           <h2>Health Benefits of Blood donation</h2>
+           
+           <p>
+            There are several health benefits of blood donation. Will discuss about a few here. Some might even surprise you.
+
+            <div class="col-md-8 col-md-offset-2 content">
+            <ul class=".og-grid">
+              <li>
+               <h3>Improves Heart Health</h3>
+
+              </li>
+
+              <li>
+                <h3>Enhances The Production Of New Blood Cells</h3>
+              </li>
+
+              <li>
+                <h3>Burns Calories</h3>
+             </li>
+
+              <li>
+               <h3>Reduces Cancer Risk</h3>    
+              </li>
+
+              <li><h3>Free Health Screening Done</h3>
+             </li>
+
+              <li>
+                <h3>Saves Lives</h3>
+              </li>
+                <li>
+                <h3>Brings joy to Many</h3>
+              </li>
+
+            </ul>
+        </p>
+    </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- Parallax 1 -->
 <section id="parallax1" class="home-section parallax" data-stellar-background-ratio="0.5">
@@ -99,169 +225,83 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="color-light">
-                    <h2 class="wow bounceInDown" data-wow-delay="0.5s">Details are the key for perfection</h2>
-                    <p class="lead wow bounceInUp" data-wow-delay="1s">We mix all detailed things together</p>
+                    <h2 class="wow bounceInDown" data-wow-delay="0.5s">Be a hero!!</h2>
+                    <p class="lead wow bounceInUp" data-wow-delay="1s">Its  your blood</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services -->
-<section id="services" class="home-section bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <div class="section-heading">
-                    <h2>Services</h2>
-                    <div class="heading-line"></div>
-                    <p>We’ve been building unique digital products, platforms, and experiences for the past 6 years.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="carousel-service" class="service carousel slide">
-
-                    <!-- slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-offset-1 col-md-6">
-                                    <div class="wow bounceInLeft">
-                                        <h4>Website Design</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-5">
-                                    <div class="screenshot wow bounceInRight">
-                                        <img src="/frontend/img/screenshots/1.png" class="img-responsive" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-offset-1 col-md-6">
-                                    <div class="wow bounceInLeft">
-                                        <h4>Brand Identity</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-5">
-                                    <div class="screenshot wow bounceInRight">
-                                        <img src="frontend/img/screenshots/2.png" class="img-responsive" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-offset-1 col-md-6">
-                                    <div class="wow bounceInLeft">
-                                        <h4>Web & Mobile Apps</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-5">
-                                    <div class="screenshot wow bounceInRight">
-                                        <img src="frontend/img/screenshots/3.png" class="img-responsive" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-service" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-service" data-slide-to="1"></li>
-                        <li data-target="#carousel-service" data-slide-to="2"></li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Works -->
+<!-- Eligibility -->
 <section id="portfolio" class="home-section bg-gray">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <div class="section-heading">
-                    <h2>Works</h2>
+                    <h2>Eligibility</h2>
                     <div class="heading-line"></div>
-                    <p>We’ve been building unique digital products, platforms, and experiences for the past 6 years.</p>
+                    <p>For the safety of the patients, certain requirements should be considered.</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="text-center">Donors should be</h1>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>Age- between 18-65 years</li>
+                                <li>Weight above 50kg</li>
+                                <li>allowed to donate every 6 months</li>
+                                <li>You shoul not be an asthmatic patient</li>
+                                <li>Women should not be on period</li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            
+                        </div>
+                    </div>
+                </div>
 
-                <ul id="og-grid" class="og-grid">
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/1.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei. Pri consul detracto eu, solet nusquam accusam ex vim, an movet interesset necessitatibus mea.">
-                            <img src="/frontend/img/works/thumbs/1.jpg" alt=""/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/2.jpg" data-title="Portfolio title" data-description="Mea an eros periculis dignissim, quo mollis nostrum elaboraret et. Id quem perfecto mel, no etiam perfecto qui. No nisl legere recusabo nam, ius an tale pericula evertitur, dicat phaedrum qui in. Usu numquam legendos in, voluptaria sadipscing ut vel. Eu eum mandamus volutpat gubergren, eos ad detracto nominati, ne eum idque elitr aliquam.">
-                            <img src="/frontend/img/works/thumbs/2.jpg" alt=""/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/3.jpg" data-title="Portfolio title" data-description="Vim ad persecuti appellantur. Eam ignota deterruisset eu, in omnis fierent convenire sed. Ne nulla veritus vel, liber euripidis in eos. Postea comprehensam vis in, detracto deseruisse mei ea. Ex sadipscing deterruisset concludaturque quo.">
-                            <img src="/frontend/img/works/thumbs/3.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/4.jpg" data-title="Portfolio title" data-description="In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei. Pri consul detracto eu, solet nusquam accusam ex vim, an movet interesset necessitatibus mea.">
-                            <img src="/frontend/img/works/thumbs/4.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/5.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea">
-                            <img src="/frontend/img/works/thumbs/5.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/6.jpg" data-title="Portfolio title" data-description="Id elit saepe pro. In atomorum constituam definitionem quo, at torquatos sadipscing eum, ut eum wisi meis mentitum. Probo feugiat ea duo. An usu platonem instructior, qui dolores inciderint ad. Te elit essent mea, vim ne atqui legimus invenire, ad dolor vitae sea.">
-                            <img src="/frontend/img/works/thumbs/6.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/7.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei.">
-                            <img src="/frontend/img/works/thumbs/7.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/8.jpg" data-title="Portfolio title" data-description="No nisl legere recusabo nam, ius an tale pericula evertitur, dicat phaedrum qui in. Usu numquam legendos in, voluptaria sadipscing ut vel. Eu eum mandamus volutpat gubergren, eos ad detracto nominati, ne eum idque elitr aliquam.">
-                            <img src="/frontend/img/works/thumbs/8.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/9.jpg" data-title="Portfolio title" data-description="Lorem ipsum dolor sit amet, ex pri quod ferri fastidii. Mazim philosophia eum ad, facilisis laboramus te est. Eam magna fabellas ut. Ne vis diceret accumsan salutandi, pro in impedit accusamus dissentias, ut nonumy eloquentiam ius.">
-                            <img src="/frontend/img/works/thumbs/9.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/10.jpg" data-title="Portfolio title" data-description="Duo te dico volutpat, unum elit oblique per id. Ne duo mollis sapientem intellegebat. Per at augue vidisse percipit, pri vocibus assueverit interesset ut, no dolore luptatum incorrupte nec. In mentitum forensibus nec, nibh eripuit ut pri, tale illud voluptatum ut sea. Sed oratio repudiare ei, cum an magna labitur, eu atqui augue mei. Pri consul detracto eu, solet nusquam accusam ex vim.">
-                            <img src="/frontend/img/works/thumbs/10.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/11.jpg" data-title="Portfolio title" data-description="Vim ad persecuti appellantur. Eam ignota deterruisset eu, in omnis fierent convenire sed. Ne nulla veritus vel, liber euripidis in eos. Postea comprehensam vis in, detracto deseruisse mei ea. Ex sadipscing deterruisset concludaturque quo.">
-                            <img src="/frontend/img/works/thumbs/11.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-largesrc="/frontend/img/works/12.jpg" data-title="Portfolio title" data-description="Mea an eros periculis dignissim, quo mollis nostrum elaboraret et. Id quem perfecto mel, no etiam perfecto qui. No nisl legere recusabo nam, ius an tale pericula evertitur, dicat phaedrum qui in. Usu numquam legendos in, voluptaria sadipscing ut vel. Eu eum mandamus volutpat gubergren, eos ad detracto nominati, ne eum idque elitr aliquam.">
-                            <img src="/frontend/img/works/thumbs/12.jpg" alt="img01"/>
-                        </a>
-                    </li>
-                </ul>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="text-center">.....</h1>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>Men can donate every 3 months</li>
+                                <li>Women can donate every 4 months</li>
+                                <li>No tattoo</li>
+                                <li>No vaccination for 3 weeks</li>
+                                <li>Haemoglobin should be 12</li>
+                                <li>HIV negative</li>
+                                <li>No Herpititis</li>
+                                <li>not involved in sex business</li>
+                               </ul>
+                        </div>
+                        <div class="panel-footer">
+                            
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-6"> 
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                           <p>You can also volunteer to donate in any of the  <a href="https://www.google.gm/search?q=hospitals+in+the+gambia&npsic=0&rflfq=1&rlha=0&rllag=13434910,-16652599,8732&tbm=lcl&ved=0ahUKEwiYkqK_l9LaAhXLcRQKHXEZBHkQjGoIXQ&tbs=lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rldoc=1#rlfi=hd:;si:,13.455187515411637,-16.442590499218795;mv:!1m3!1d151369.85896464137!2d-16.687036300000045!3d13.395078109611912!3m2!1i946!2i468!4f13.1" target="_blank" style="text-decoration: underline;"> hospitals</a> in the country</p>
+                      </div>
+                      <div class="panel-body">
+                         <img src="../frontend/img/donate.jpg" alt="Blood" style=" height: 245px; width: 500px;">
+
+                      </div>
+                  </div>
+                </div>  
+        
             </div>
         </div>
     </div>
@@ -272,61 +312,60 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <ul class="clients">
-                    <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#"><img src="/frontend/img/clients/1.png" alt="" /></a></li>
-                    <li class="wow fadeInDown" data-wow-delay="0.6s"><a href="#"><img src="/frontend/img/clients/2.png" alt="" /></a></li>
-                    <li class="wow fadeInDown" data-wow-delay="0.9s"><a href="#"><img src="/frontend/img/clients/3.png" alt="" /></a></li>
-                    <li class="wow fadeInDown" data-wow-delay="1.1s"><a href="#"><img src="/frontend/img/clients/4.png" alt="" /></a></li>
-                </ul>
+
             </div>
         </div>
     </div>
 </section>
 
-<!-- Team -->
-<section id="team" class="home-section bg-white">
+
+<!-- Testimonials -->
+<section id="services" class="home-section bg-white">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <div class="section-heading">
-                    <h2>Our Team</h2>
+                    <h2>Testimonials</h2>
                     <div class="heading-line"></div>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Testimonial from blood donor recipents. See how they were given a second chance in life.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <div class="box-team wow bounceInUp" data-wow-delay="0.1s">
-                    <img src="/frontend/img/team/1.jpg" alt="" class="img-circle img-responsive" />
-                    <h4>Dominique Vroslav</h4>
-                    <p>Art Director</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.3s">
-                <div class="box-team wow bounceInUp">
-                    <img src="/frontend/img/team/2.jpg" alt="" class="img-circle img-responsive" />
-                    <h4>Thomas Jeffersonn</h4>
-                    <p>Web Designer</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.5s">
-                <div class="box-team wow bounceInUp">
-                    <img src="/frontend/img/team/3.jpg" alt="" class="img-circle img-responsive" />
-                    <h4>Nola Maurin</h4>
-                    <p>Illustrator</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" data-wow-delay="0.7s">
-                <div class="box-team wow bounceInUp">
-                    <img src="/frontend/img/team/4.jpg" alt="" class="img-circle img-responsive" />
-                    <h4>Mira Ladovic</h4>
-                    <p>Typographer</p>
-                </div>
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg" alt="First Slide">
+        </div>
+        <div class="item">
+            <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg" alt="Second Slide">
+        </div>
+        <div class="item">
+            <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg" alt="Third Slide">
+        </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left text-center"</span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- Contact -->
 <section id="contact" class="home-section bg-gray">
@@ -334,9 +373,9 @@
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <div class="section-heading">
-                    <h2>Contact us</h2>
+                    <h2>Write a Testimonial</h2>
                     <div class="heading-line"></div>
-                    <p>If you have any question or just want to say 'hello' to Alstar web studio please fill out form below and we will be get in touch with you within 24 hours. </p>
+                    <p>If you have a testimonial, please write it below and we will review it within 24 hours.</p>
                 </div>
             </div>
         </div>
@@ -354,19 +393,16 @@
                         </div>
                     </div>
 
+                   
+
                     <div class="col-md-offset-2 col-md-8">
                         <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <label class="pull-left help-text">Add your Picture: </label>
+                            <input type="file" name="" class="form-control">
                             <div class="validation"></div>
                         </div>
                     </div>
 
-                    <div class="col-md-offset-2 col-md-8">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
-                        </div>
-                    </div>
                     <div class="col-md-offset-2 col-md-8">
                         <div class="form-group">
                             <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
@@ -426,25 +462,25 @@
                     <li><a href="#">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse" style="background-color: blue; color: white"></i>
 						</span></a>
                     </li>
                     <li><a href="#">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+							<i class="fa fa-dribbble fa-stack-1x fa-inverse" style="background-color: #000; color: white""></i>
 						</span></a>
                     </li>
                     <li><a href="#">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+							<i class="fa fa-twitter fa-stack-1x fa-inverse" style="background-color: cyan; color: white"></i>
 						</span></a>
                     </li>
                     <li><a href="#">
 						<span class="fa-stack fa-2x">
 							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+							<i class="fa fa-pinterest fa-stack-1x fa-inverse"  style="background-color: pink; color: white"></i>
 						</span></a>
                     </li>
                 </ul>
@@ -458,7 +494,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p>Copyright &copy; Alstar. All rights reserved.</p>
+                <p>Copyright &copy; UTG/ITC Students. All rights reserved.</p>
                 <div class="credits">
                     <!--
                       All the links in the footer should remain intact.
@@ -466,7 +502,7 @@
                       Licensing information: https://bootstrapmade.com/license/
                       Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Alstar
                     -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    Designed by <a href="https://bootstrapmade.com/">Tech Ladies</a>
                 </div>
             </div>
         </div>
@@ -476,7 +512,7 @@
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <!-- js -->
-<script src="/frontend/js/jquery.js"></script>
+<script src="{{ asset('/frontend/js/jquery.js')}}"></script>
 <script src="/frontend/js/bootstrap.min.js"></script>
 <script src="/frontend/js/wow.min.js"></script>
 <script src="/frontend/js/mb.bgndGallery.js"></script>
@@ -491,7 +527,7 @@
 <script src="/frontend/contactform/contactform.js"></script>
 
 <!-- Template Custom Javascript File -->
-<script src="/frontend/js/custom.js"></script>
+<script src="{{asset('frontend/js/custom.js')}}"></script>
 
 </body>
 </html>

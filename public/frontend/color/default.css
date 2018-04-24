@@ -5,23 +5,23 @@ a, a:hover {
 
 /* Back to top button */
 .back-to-top {
-  background: #00c1c1;
+  background: #c10024;
   color: #fff;
 }
 
 
 .back-to-top:focus {
-  background: #00c1c1;
+  background: #c10024;
   color: #fff;
 }
 
 .back-to-top:hover {
-  background: #019090;
+  background: #c10054;
   color: #fff;
 }
 
 .navbar-default {
-  background: #00c1c1;
+  background:#c10024;
 }
 
 .form-control:focus {
@@ -35,9 +35,9 @@ a, a:hover {
 }
 
 .btn-theme {
-  background: #00c1c1;
+  background: #c10024;
 }
 
 .contact-widget i {
-  color: #00c1c1;
+  color: #c10024;
 }
