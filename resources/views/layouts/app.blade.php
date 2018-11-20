@@ -13,11 +13,10 @@
     <!-- css -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet"
           media="screen">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
     <link href="{{asset('/frontend/css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
-    <link href="{{asset('/frontend/css/style.css')}}" rel="stylesheet" media="screen">
     <link href="{{asset('/frontend/color/default.css')}}" rel="stylesheet" media="screen">
+    <link href="{{asset('/frontend/css/style.css')}}" rel="stylesheet" media="screen">
+
 
     <!-- =======================================================
       Theme Name: Alstar
@@ -40,7 +39,7 @@
                 </button>
 
                 <!-- Logo text or image -->
-                <a class="navbar-brand" href="index.html">Blood Donation</a>
+                <a class="navbar-brand" href="{{url('/')}}">Blood Donation</a>
 
             </div>
             <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
@@ -49,9 +48,39 @@
                     <li><a href="#about">Why Donate</a></li>
                     <li><a href="#portfolio">Eligibilty</a></li>
                     <li><a href="#services">Testimonials</a></li>
-                    <!-- <li><a href="#team">Team</a></li> -->
+                    @auth()
+                        <li><a href="{{url('donate')}}">Donors</a></li>
+                    @endauth
+                <!-- <li><a href="#team">Team</a></li> -->
                     <!-- <li><a href="#contact">Write your testimonial</a></li> -->
-                    <li><a href="#myModal" data-toggle="modal">register</a></li>
+                    @guest
+                        <li><a href="{{ route('login') }}">Login</a></li>
+                    @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false" aria-haspopup="true" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="">register</a></li>
+                                <li>
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-patient').submit();">
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                          style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    @endguest
+                </ul>
+                {{--<li><a href="#myModal" data-toggle="modal">register</a></li>--}}
                 </ul>
             </div>
         </div>

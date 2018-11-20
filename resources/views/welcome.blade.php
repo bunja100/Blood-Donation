@@ -25,7 +25,8 @@
 
                 <div class="register navigation" style="margin-left: -45px">
                     <!-- <a href="#contact" class="btn btn-primary btn-lg">Donate Blood</a> -->
-                    <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">Register
+                    <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal">
+                        Register
                         To Donate Blood
                     </button>
 
@@ -44,20 +45,21 @@
                     <h4 class="modal-title">Donor Registration</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="#" method="post" role="form">
+                    <form action="{{route('donate.store')}}" method="post" role="form">
+                        {{csrf_field()}}
                         <div class="form-group">
                             <label class="pull-left">First Name: </label>
-                            <input type="text" name="" class="form-control" placeholder="enter first name">
+                            <input type="text" name="first_name" class="form-control" placeholder="enter first name" required>
                         </div>
 
                         <div class="form-group">
                             <label class="pull-left">Last Name: </label>
-                            <input type="text" name="" class="form-control" placeholder="enter your lastname">
+                            <input type="text" name="last_name" class="form-control" placeholder="enter your lastname" required>
                         </div>
 
                         <div class="form-group">
                             <label class="pull-left">Location: </label>
-                            <select class="form-control">
+                            <select class="form-control" name="location" required>
                                 <option value="Banjul">Banjul</option>
                                 <option value="Brikama">Brikama</option>
                                 <option value="Serrekunda">Serrekunda</option>
@@ -66,7 +68,7 @@
 
                         <div class="form-group">
                             <label class="pull-left">Blood Type: </label>
-                            <select class="form-control">
+                            <select class="form-control" name="blood_type" required>
                                 <option value="O+">O+</option>
                                 <option value="O-">O-</option>
                                 <option value="AB">AB</option>
@@ -77,14 +79,14 @@
 
                         <div class="form-group">
                             <label class="pull-left">Phone Number: </label>
-                            <input type="text" name="" class="form-control" placeholder="enter your phone number">
+                            <input type="text" name="phone" class="form-control" placeholder="enter your phone number" required>
                         </div>
 
                         <div class="form-group">
                             <label class="pull-left">Email (
                                 <object>optional</object>
                                 )</label>
-                            <input type="email" name="" class="form-control" placeholder="enter your email">
+                            <input type="email" name="email" class="form-control" placeholder="enter your email" required>
                         </div>
 
                         <button class="btn btn-primary pull-left" type="submit">Submit</button>
@@ -113,18 +115,22 @@
             </div>
             <div class="row wow fadeInUp">
                 <div class="col-md-6 about-img">
-                    <img style="margin-top: 150px" src="../frontend/img/about-img.jpg" alt="Blood">
+                    <img style="margin-top: 150px" src="{{asset('../frontend/img/about-img.jpg')}}" alt="Blood">
                 </div>
 
                 <div class="col-md-6 content">
                     <h2>What is blood donation?</h2>
-                    <h3>There many important reasons and benefits for donating blood. We'll just give a brief explanation of
+                    <h3>There many important reasons and benefits for donating blood. We'll just give a brief
+                        explanation of
                         some of them. </h3>
                     <p>
-                        A blood donation occurs when a person voluntarily has blood drawn and used for transfusions and/or
-                        made into biopharmaceutical medications by a process called fractionation (separation of whole-blood
+                        A blood donation occurs when a person voluntarily has blood drawn and used for transfusions
+                        and/or
+                        made into biopharmaceutical medications by a process called fractionation (separation of
+                        whole-blood
                         components). Donation may be of whole blood (WB), or of specific components directly (the latter
-                        called apheresis). Blood banks often participate in the collection process as well as the procedures
+                        called apheresis). Blood banks often participate in the collection process as well as the
+                        procedures
                         that follow it.
                     </p>
 
@@ -142,7 +148,8 @@
                     <h2>Health Benefits of Blood donation</h2>
 
                     <p>
-                        There are several health benefits of blood donation. Will discuss about a few here. Some might even
+                        There are several health benefits of blood donation. Will discuss about a few here. Some might
+                        even
                         surprise you.
 
                     <div class="col-md-8 col-md-offset-2 content">
@@ -262,7 +269,8 @@
                                     country</p>
                             </div>
                             <div class="panel-body">
-                                <img src="../frontend/img/donate.jpg" alt="Blood" style=" height: 245px; width: 500px;">
+                                <img src="{{asset('../frontend/img/donate.jpg')}}" alt="Blood"
+                                     style=" height: 245px; width: 500px;">
 
                             </div>
                         </div>
@@ -309,13 +317,16 @@
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg" alt="First Slide">
+                                <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg"
+                                     alt="First Slide">
                             </div>
                             <div class="item">
-                                <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg" alt="Second Slide">
+                                <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg"
+                                     alt="Second Slide">
                             </div>
                             <div class="item">
-                                <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg" alt="Third Slide">
+                                <img style="width: 100%; height: 320px" src="../frontend/img/blood.jpg"
+                                     alt="Third Slide">
                             </div>
                         </div>
                         <!-- Carousel controls -->

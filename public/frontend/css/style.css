@@ -15,6 +15,18 @@ Imports
 /* ================================
 General
 ================================= */
+.donors-list {
+    /*margin-top: 15px;*/
+    /*background-color: red;*/
+}
+
+.donors-list h2 {
+    color: white;
+}
+
+.login-title {
+    background-color: #c10054;
+}
 
 .login-page {
     margin-top: 75px;
